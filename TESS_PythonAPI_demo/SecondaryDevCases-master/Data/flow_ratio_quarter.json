@@ -1,0 +1,29 @@
+{
+	"4": {
+		"00:00": {
+			"left": 1.0,
+			"straight": 0,
+			"right": 0
+		},
+		"00:01": {
+			"left": 0,
+			"straight": 1.0,
+			"right": 0
+		},
+		"00:02": {
+			"left": 0,
+			"straight": 0,
+			"right": 1.0
+		},
+		"00:03": {
+			"left": 2.0,
+			"straight": 3.0,
+			"right": 1.0
+		},
+		"00:04": {
+			"left": 3.0,
+			"straight": 1.0,
+			"right": 2.0
+		}
+	}
+}
