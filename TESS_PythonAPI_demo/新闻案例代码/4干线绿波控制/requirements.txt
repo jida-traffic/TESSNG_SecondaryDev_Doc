@@ -1,0 +1,5 @@
+absl-py==1.4.0
+ortools==9.4.1874
+protobuf==3.19.6
+PySide2==5.15.2.1
+shiboken2==5.15.2.1

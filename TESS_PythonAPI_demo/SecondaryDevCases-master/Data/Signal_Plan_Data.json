@@ -1,0 +1,420 @@
+{
+	"汾江路-绿景路": {
+		"00:00": {
+			"cycle_time": 112,
+			"yellow_interval": 3,
+			"all_red_interval": 0,
+			"phases": [{
+				"phase_id": 184,
+				"phase_number": 1,
+				"lamp_lst": [187, 190, 212, 213, 202, 203, 223, 224, 221, 222],
+				"phase_name": "北左直;东入口行人;南入口行人;西入口行人;西出口行人;",
+				"start_time": 0,
+				"green_time": 25
+			}, {
+				"phase_id": 185,
+				"phase_number": 2,
+				"lamp_lst": [193, 194, 210, 211, 202, 203, 223, 224, 191, 192, 205, 209],
+				"phase_name": "北入口行人;东出口行人;南入口行人;西入口行人;北出口行人;东左直;",
+				"start_time": 28,
+				"green_time": 25
+			}, {
+				"phase_id": 186,
+				"phase_number": 3,
+				"lamp_lst": [212, 213, 202, 203, 221, 222, 200, 201, 214, 216, 220],
+				"phase_name": "东入口行人;南入口行人;西出口行人;南出口行人;西左直;",
+				"start_time": 56,
+				"green_time": 25
+			}, {
+				"phase_id": 187,
+				"phase_number": 4,
+				"lamp_lst": [212, 213, 200, 201, 223, 224, 210, 211, 196, 199],
+				"phase_name": "东入口行人;南出口行人;西入口行人;东出口行人;南左直;",
+				"start_time": 84,
+				"green_time": 25
+			}]
+		},
+		"06:50": {
+			"cycle_time": 165,
+			"yellow_interval": 3,
+			"all_red_interval": 0,
+			"phases": [{
+				"phase_id": 184,
+				"phase_number": 1,
+				"lamp_lst": [193, 194, 210, 211, 202, 203, 223, 224, 191, 192, 205, 209],
+				"phase_name": "北入口行人;东出口行人;南入口行人;西入口行人;北出口行人;东左直;",
+				"start_time": 0,
+				"green_time": 35
+			}, {
+				"phase_id": 185,
+				"phase_number": 2,
+				"lamp_lst": [205, 209, 202, 203, 223, 224],
+				"phase_name": "东左直;南入口行人;西入口行人;",
+				"start_time": 38,
+				"green_time": 12
+			}, {
+				"phase_id": 186,
+				"phase_number": 3,
+				"lamp_lst": [187, 190, 212, 213, 202, 203, 223, 224, 205, 209, 221, 222],
+				"phase_name": "北左直;东入口行人;南入口行人;西入口行人;东左直;西出口行人;",
+				"start_time": 53,
+				"green_time": 30
+			}, {
+				"phase_id": 187,
+				"phase_number": 4,
+				"lamp_lst": [212, 213, 200, 201, 223, 224, 210, 211, 196, 199],
+				"phase_name": "东入口行人;南出口行人;西入口行人;东出口行人;南左直;",
+				"start_time": 86,
+				"green_time": 43
+			}, {
+				"phase_id": 188,
+				"phase_number": 5,
+				"lamp_lst": [212, 213, 202, 203, 221, 222, 205, 209, 200, 201, 214, 216, 220],
+				"phase_name": "东入口行人;南入口行人;西出口行人;东左直;南出口行人;西左直;",
+				"start_time": 132,
+				"green_time": 30
+			}]
+		},
+		"07:30": {
+			"cycle_time": 190,
+			"yellow_interval": 3,
+			"all_red_interval": 0,
+			"phases": [{
+				"phase_id": 184,
+				"phase_number": 1,
+				"lamp_lst": [193, 194, 210, 211, 202, 203, 223, 224, 191, 192, 205, 209],
+				"phase_name": "北入口行人;东出口行人;南入口行人;西入口行人;北出口行人;东左直;",
+				"start_time": 0,
+				"green_time": 50
+			}, {
+				"phase_id": 185,
+				"phase_number": 2,
+				"lamp_lst": [205, 209, 202, 203, 223, 224],
+				"phase_name": "东左直;南入口行人;西入口行人;",
+				"start_time": 53,
+				"green_time": 12
+			}, {
+				"phase_id": 186,
+				"phase_number": 3,
+				"lamp_lst": [187, 190, 212, 213, 202, 203, 223, 224, 205, 209, 221, 222],
+				"phase_name": "北左直;东入口行人;南入口行人;西入口行人;东左直;西出口行人;",
+				"start_time": 68,
+				"green_time": 33
+			}, {
+				"phase_id": 187,
+				"phase_number": 4,
+				"lamp_lst": [212, 213, 200, 201, 223, 224, 210, 211, 196, 199],
+				"phase_name": "东入口行人;南出口行人;西入口行人;东出口行人;南左直;",
+				"start_time": 104,
+				"green_time": 46
+			}, {
+				"phase_id": 188,
+				"phase_number": 5,
+				"lamp_lst": [212, 213, 202, 203, 221, 222, 205, 209, 200, 201, 214, 216, 220],
+				"phase_name": "东入口行人;南入口行人;西出口行人;东左直;南出口行人;西左直;",
+				"start_time": 153,
+				"green_time": 34
+			}]
+		},
+		"08:10": {
+			"cycle_time": 190,
+			"yellow_interval": 3,
+			"all_red_interval": 0,
+			"phases": [{
+				"phase_id": 184,
+				"phase_number": 1,
+				"lamp_lst": [193, 194, 210, 211, 202, 203, 223, 224, 191, 192, 205, 209],
+				"phase_name": "北入口行人;东出口行人;南入口行人;西入口行人;北出口行人;东左直;",
+				"start_time": 0,
+				"green_time": 47
+			}, {
+				"phase_id": 185,
+				"phase_number": 2,
+				"lamp_lst": [205, 209, 202, 203, 223, 224],
+				"phase_name": "东左直;南入口行人;西入口行人;",
+				"start_time": 50,
+				"green_time": 13
+			}, {
+				"phase_id": 186,
+				"phase_number": 3,
+				"lamp_lst": [187, 190, 212, 213, 202, 203, 223, 224, 205, 209, 221, 222],
+				"phase_name": "北左直;东入口行人;南入口行人;西入口行人;东左直;西出口行人;",
+				"start_time": 66,
+				"green_time": 32
+			}, {
+				"phase_id": 187,
+				"phase_number": 4,
+				"lamp_lst": [212, 213, 200, 201, 223, 224, 210, 211, 196, 199],
+				"phase_name": "东入口行人;南出口行人;西入口行人;东出口行人;南左直;",
+				"start_time": 101,
+				"green_time": 48
+			}, {
+				"phase_id": 188,
+				"phase_number": 5,
+				"lamp_lst": [212, 213, 202, 203, 221, 222, 205, 209, 200, 201, 214, 216, 220],
+				"phase_name": "东入口行人;南入口行人;西出口行人;东左直;南出口行人;西左直;",
+				"start_time": 152,
+				"green_time": 35
+			}]
+		},
+		"09:00": {
+			"cycle_time": 172,
+			"yellow_interval": 3,
+			"all_red_interval": 0,
+			"phases": [{
+				"phase_id": 184,
+				"phase_number": 1,
+				"lamp_lst": [187, 190, 212, 213, 202, 203, 223, 224, 221, 222],
+				"phase_name": "北左直;东入口行人;南入口行人;西入口行人;西出口行人;",
+				"start_time": 0,
+				"green_time": 40
+			}, {
+				"phase_id": 185,
+				"phase_number": 2,
+				"lamp_lst": [193, 194, 210, 211, 202, 203, 223, 224, 191, 192, 205, 209],
+				"phase_name": "北入口行人;东出口行人;南入口行人;西入口行人;北出口行人;东左直;",
+				"start_time": 43,
+				"green_time": 40
+			}, {
+				"phase_id": 186,
+				"phase_number": 3,
+				"lamp_lst": [212, 213, 202, 203, 221, 222, 200, 201, 214, 216, 220],
+				"phase_name": "东入口行人;南入口行人;西出口行人;南出口行人;西左直;",
+				"start_time": 86,
+				"green_time": 40
+			}, {
+				"phase_id": 187,
+				"phase_number": 4,
+				"lamp_lst": [212, 213, 200, 201, 223, 224, 210, 211, 196, 199],
+				"phase_name": "东入口行人;南出口行人;西入口行人;东出口行人;南左直;",
+				"start_time": 129,
+				"green_time": 40
+			}]
+		},
+		"17:00": {
+			"cycle_time": 190,
+			"yellow_interval": 3,
+			"all_red_interval": 0,
+			"phases": [{
+				"phase_id": 184,
+				"phase_number": 1,
+				"lamp_lst": [193, 194, 210, 211, 202, 203, 223, 224, 191, 192, 205, 209],
+				"phase_name": "北入口行人;东出口行人;南入口行人;西入口行人;北出口行人;东左直;",
+				"start_time": 0,
+				"green_time": 42
+			}, {
+				"phase_id": 185,
+				"phase_number": 2,
+				"lamp_lst": [205, 209, 202, 203, 223, 224],
+				"phase_name": "东左直;南入口行人;西入口行人;",
+				"start_time": 45,
+				"green_time": 12
+			}, {
+				"phase_id": 186,
+				"phase_number": 3,
+				"lamp_lst": [187, 190, 212, 213, 202, 203, 223, 224, 205, 209, 221, 222],
+				"phase_name": "北左直;东入口行人;南入口行人;西入口行人;东左直;西出口行人;",
+				"start_time": 60,
+				"green_time": 44
+			}, {
+				"phase_id": 187,
+				"phase_number": 4,
+				"lamp_lst": [212, 213, 200, 201, 223, 224, 210, 211, 196, 199],
+				"phase_name": "东入口行人;南出口行人;西入口行人;东出口行人;南左直;",
+				"start_time": 107,
+				"green_time": 38
+			}, {
+				"phase_id": 188,
+				"phase_number": 5,
+				"lamp_lst": [212, 213, 202, 203, 221, 222, 205, 209, 200, 201, 214, 216, 220],
+				"phase_name": "东入口行人;南入口行人;西出口行人;东左直;南出口行人;西左直;",
+				"start_time": 148,
+				"green_time": 39
+			}]
+		},
+		"17:30": {
+			"cycle_time": 190,
+			"yellow_interval": 3,
+			"all_red_interval": 0,
+			"phases": [{
+				"phase_id": 184,
+				"phase_number": 1,
+				"lamp_lst": [193, 194, 210, 211, 202, 203, 223, 224, 191, 192, 205, 209],
+				"phase_name": "北入口行人;东出口行人;南入口行人;西入口行人;北出口行人;东左直;",
+				"start_time": 0,
+				"green_time": 42
+			}, {
+				"phase_id": 185,
+				"phase_number": 2,
+				"lamp_lst": [205, 209, 202, 203, 223, 224],
+				"phase_name": "东左直;南入口行人;西入口行人;",
+				"start_time": 45,
+				"green_time": 12
+			}, {
+				"phase_id": 186,
+				"phase_number": 3,
+				"lamp_lst": [187, 190, 212, 213, 202, 203, 223, 224, 205, 209, 221, 222],
+				"phase_name": "北左直;东入口行人;南入口行人;西入口行人;东左直;西出口行人;",
+				"start_time": 60,
+				"green_time": 42
+			}, {
+				"phase_id": 187,
+				"phase_number": 4,
+				"lamp_lst": [212, 213, 200, 201, 223, 224, 210, 211, 196, 199],
+				"phase_name": "东入口行人;南出口行人;西入口行人;东出口行人;南左直;",
+				"start_time": 105,
+				"green_time": 38
+			}, {
+				"phase_id": 188,
+				"phase_number": 5,
+				"lamp_lst": [212, 213, 202, 203, 221, 222, 205, 209, 200, 201, 214, 216, 220],
+				"phase_name": "东入口行人;南入口行人;西出口行人;东左直;南出口行人;西左直;",
+				"start_time": 146,
+				"green_time": 41
+			}]
+		},
+		"18:00": {
+			"cycle_time": 185,
+			"yellow_interval": 3,
+			"all_red_interval": 0,
+			"phases": [{
+				"phase_id": 184,
+				"phase_number": 1,
+				"lamp_lst": [193, 194, 210, 211, 202, 203, 223, 224, 191, 192, 205, 209],
+				"phase_name": "北入口行人;东出口行人;南入口行人;西入口行人;北出口行人;东左直;",
+				"start_time": 0,
+				"green_time": 35
+			}, {
+				"phase_id": 185,
+				"phase_number": 2,
+				"lamp_lst": [205, 209, 202, 203, 223, 224],
+				"phase_name": "东左直;南入口行人;西入口行人;",
+				"start_time": 38,
+				"green_time": 12
+			}, {
+				"phase_id": 186,
+				"phase_number": 3,
+				"lamp_lst": [187, 190, 212, 213, 202, 203, 223, 224, 205, 209, 221, 222],
+				"phase_name": "北左直;东入口行人;南入口行人;西入口行人;东左直;西出口行人;",
+				"start_time": 53,
+				"green_time": 43
+			}, {
+				"phase_id": 187,
+				"phase_number": 4,
+				"lamp_lst": [212, 213, 200, 201, 223, 224, 210, 211, 196, 199],
+				"phase_name": "东入口行人;南出口行人;西入口行人;东出口行人;南左直;",
+				"start_time": 99,
+				"green_time": 35
+			}, {
+				"phase_id": 188,
+				"phase_number": 5,
+				"lamp_lst": [212, 213, 202, 203, 221, 222, 205, 209, 200, 201, 214, 216, 220],
+				"phase_name": "东入口行人;南入口行人;西出口行人;东左直;南出口行人;西左直;",
+				"start_time": 137,
+				"green_time": 45
+			}]
+		},
+		"19:00": {
+			"cycle_time": 172,
+			"yellow_interval": 3,
+			"all_red_interval": 0,
+			"phases": [{
+				"phase_id": 184,
+				"phase_number": 1,
+				"lamp_lst": [187, 190, 212, 213, 202, 203, 223, 224, 221, 222],
+				"phase_name": "北左直;东入口行人;南入口行人;西入口行人;西出口行人;",
+				"start_time": 0,
+				"green_time": 40
+			}, {
+				"phase_id": 185,
+				"phase_number": 2,
+				"lamp_lst": [193, 194, 210, 211, 202, 203, 223, 224, 191, 192, 205, 209],
+				"phase_name": "北入口行人;东出口行人;南入口行人;西入口行人;北出口行人;东左直;",
+				"start_time": 43,
+				"green_time": 40
+			}, {
+				"phase_id": 186,
+				"phase_number": 3,
+				"lamp_lst": [212, 213, 202, 203, 221, 222, 200, 201, 214, 216, 220],
+				"phase_name": "东入口行人;南入口行人;西出口行人;南出口行人;西左直;",
+				"start_time": 86,
+				"green_time": 40
+			}, {
+				"phase_id": 187,
+				"phase_number": 4,
+				"lamp_lst": [212, 213, 200, 201, 223, 224, 210, 211, 196, 199],
+				"phase_name": "东入口行人;南出口行人;西入口行人;东出口行人;南左直;",
+				"start_time": 129,
+				"green_time": 40
+			}]
+		},
+		"21:00": {
+			"cycle_time": 152,
+			"yellow_interval": 3,
+			"all_red_interval": 0,
+			"phases": [{
+				"phase_id": 184,
+				"phase_number": 1,
+				"lamp_lst": [187, 190, 212, 213, 202, 203, 223, 224, 221, 222],
+				"phase_name": "北左直;东入口行人;南入口行人;西入口行人;西出口行人;",
+				"start_time": 0,
+				"green_time": 36
+			}, {
+				"phase_id": 185,
+				"phase_number": 2,
+				"lamp_lst": [212, 213, 202, 203, 221, 222, 200, 201, 214, 216, 220],
+				"phase_name": "东入口行人;南入口行人;西出口行人;南出口行人;西左直;",
+				"start_time": 39,
+				"green_time": 34
+			}, {
+				"phase_id": 186,
+				"phase_number": 3,
+				"lamp_lst": [193, 194, 210, 211, 202, 203, 223, 224, 191, 192, 205, 209],
+				"phase_name": "北入口行人;东出口行人;南入口行人;西入口行人;北出口行人;东左直;",
+				"start_time": 76,
+				"green_time": 35
+			}, {
+				"phase_id": 187,
+				"phase_number": 4,
+				"lamp_lst": [212, 213, 200, 201, 223, 224, 210, 211, 196, 199],
+				"phase_name": "东入口行人;南出口行人;西入口行人;东出口行人;南左直;",
+				"start_time": 114,
+				"green_time": 35
+			}]
+		},
+		"23:00": {
+			"cycle_time": 112,
+			"yellow_interval": 3,
+			"all_red_interval": 0,
+			"phases": [{
+				"phase_id": 184,
+				"phase_number": 1,
+				"lamp_lst": [187, 190, 212, 213, 202, 203, 223, 224, 221, 222],
+				"phase_name": "北左直;东入口行人;南入口行人;西入口行人;西出口行人;",
+				"start_time": 0,
+				"green_time": 25
+			}, {
+				"phase_id": 185,
+				"phase_number": 2,
+				"lamp_lst": [193, 194, 210, 211, 202, 203, 223, 224, 191, 192, 205, 209],
+				"phase_name": "北入口行人;东出口行人;南入口行人;西入口行人;北出口行人;东左直;",
+				"start_time": 28,
+				"green_time": 25
+			}, {
+				"phase_id": 186,
+				"phase_number": 3,
+				"lamp_lst": [212, 213, 202, 203, 221, 222, 200, 201, 214, 216, 220],
+				"phase_name": "东入口行人;南入口行人;西出口行人;南出口行人;西左直;",
+				"start_time": 56,
+				"green_time": 25
+			}, {
+				"phase_id": 187,
+				"phase_number": 4,
+				"lamp_lst": [212, 213, 200, 201, 223, 224, 210, 211, 196, 199],
+				"phase_name": "东入口行人;南出口行人;西入口行人;东出口行人;南左直;",
+				"start_time": 84,
+				"green_time": 25
+			}]
+		}
+	}
+}
