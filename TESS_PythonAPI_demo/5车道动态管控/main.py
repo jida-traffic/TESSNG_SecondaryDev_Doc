@@ -15,8 +15,8 @@ if __name__ == '__main__':
 
     workspace = os.fspath(Path(__file__).resolve().parent)
     config = {'__workspace': workspace,
-              '__netfilepath': "./GuoHe20230328.tess",
-              '__simuafterload': False,
+              '__netfilepath': "./Map/GuoHe20230328.tess",
+              '__simuafterload': True,
               '__custsimubysteps': False,
               "__writesimuresult": True
               }

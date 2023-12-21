@@ -157,16 +157,16 @@ class MySimulator(QObject, PyCustomerSimulator, SimuInterface):
         # 在计算第20批次时修改某决策点各路径流量比
         if batchNum == 20:
             # 一个决策点某个时段各路径车辆分配比
-            dfi = TESSNG.DecipointFlowRatioByInterval()
+            dfi = Online.DecipointFlowRatioByInterval()
             #决策点编号
             dfi.deciPointID = 5
             #起始时间 单位秒
             dfi.startDateTime = 1
             #结束时间 单位秒
             dfi.endDateTime = 84000
-            rfr1 = TESSNG.RoutingFlowRatio(10, 3)
-            rfr2 = TESSNG.RoutingFlowRatio(11, 4)
-            rfr3 = TESSNG.RoutingFlowRatio(12, 3)
+            rfr1 = Online.RoutingFlowRatio(10, 3)
+            rfr2 = Online.RoutingFlowRatio(11, 4)
+            rfr3 = Online.RoutingFlowRatio(12, 3)
             dfi.mlRoutingFlowRatio = [rfr1, rfr2, rfr3]
             return [dfi]
         return []
@@ -212,12 +212,12 @@ class MySimulator(QObject, PyCustomerSimulator, SimuInterface):
 
         # 动态发车，不通过发车点发送，直接在路段和连接段中间某位置创建并发送，每50个计算批次发送一次
         if batchNum % 50 == 1:
-            r = hex(256 + random.randint(0,256))[3:].upper()
-            g = hex(256 + random.randint(0,256))[3:].upper()
-            b = hex(256 + random.randint(0,256))[3:].upper()
+            r = hex(256 + random.randint(0, 256))[3:].upper()
+            g = hex(256 + random.randint(0, 256))[3:].upper()
+            b = hex(256 + random.randint(0, 256))[3:].upper()
             color = f"#{r}{g}{b}"
             # 路段上发车
-            dvp = TESSNG.DynaVehiParam()
+            dvp = Online.DynaVehiParam()
             dvp.vehiTypeCode = random.randint(0, 4) + 1
             dvp.roadId = 6
             dvp.laneNumber = random.randint(0, 3)

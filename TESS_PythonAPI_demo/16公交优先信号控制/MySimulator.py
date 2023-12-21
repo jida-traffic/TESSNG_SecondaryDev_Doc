@@ -168,8 +168,10 @@ class MySimulator(QObject, PyCustomerSimulator):
         #  当前的仿真时间，为t
         t = simuTime/1000
         #  获取信号灯相位号
-        signalePhaseId = signalLamp.phaseId()
-        print(signalLamp.signalGroupId(), signalLamp.id())
+        signalePhaseId = signalLamp.signalPhase().id()
+        print("signalePhaseId={}".format(signalePhaseId))
+        # signalePhaseId = signalLamp.phaseId()
+        # print(signalLamp.signalGroupId(), signalLamp.id())
         empty = []
         
         #  判断是否有公交车到达

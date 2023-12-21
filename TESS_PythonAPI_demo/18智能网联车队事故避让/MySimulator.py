@@ -127,6 +127,7 @@ class MySimulator(QObject, PyCustomerSimulator):
         carType = vehi.vehicleTypeCode()
         if carType == 9:
             return True
+        return False
      
 
 
@@ -163,6 +164,7 @@ class MySimulator(QObject, PyCustomerSimulator):
             painter.drawPie(-50, -50, 100, 103, 70 * 16, 40 * 16)
 
             return False
+        return False
 
     # 过载的父类方法，TESS NG 在每个计算周期结束后调用此方法，大量用户逻辑在此实现，注意耗时大的计算要尽可能优化，否则影响运行效率
     def afterOneStep(self):
@@ -200,7 +202,7 @@ class MySimulator(QObject, PyCustomerSimulator):
             b = hex(256 + random.randint(0,256))[3:].upper()
             color = f"#{r}{g}{b}"
             # 路段上发车
-            dvp = TESSNG.DynaVehiParam()
+            dvp = Online.DynaVehiParam()
             dvp.vehiTypeCode = random.randint(0, 4) + 1
             dvp.roadId = 6
             dvp.laneNumber = random.randint(0, 3)
@@ -212,7 +214,7 @@ class MySimulator(QObject, PyCustomerSimulator):
                 pass
 
             # 连接段上发车
-            dvp2 = TESSNG.DynaVehiParam()
+            dvp2 = Online.DynaVehiParam()
             dvp2.vehiTypeCode = random.randint(0, 4) + 1
             dvp2.roadId = 3
             dvp2.laneNumber = random.randint(0, 3)

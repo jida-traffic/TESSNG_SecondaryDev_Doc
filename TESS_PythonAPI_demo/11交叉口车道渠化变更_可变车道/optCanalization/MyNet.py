@@ -14,12 +14,7 @@ from Tessng import TessInterface, TessPlugin, NetInterface, PyCustomerNet
 from Tessng import tessngPlugin, tessngIFace, m2p, p2m
 from Tessng import NetItemType, GraphicsItemPropName
 
-from SecondaryDevelopmentCases import SecondaryDevCases
-from functions import time_to_seconds
-
-
 # 用户插件子类，代表用户自定义与路网相关的实现逻辑，继承自MyCustomerNet
 class MyNet(PyCustomerNet):
     def __init__(self):
         super(MyNet, self).__init__()
-        # self.secondary_dev = SecondaryDevCases(1)

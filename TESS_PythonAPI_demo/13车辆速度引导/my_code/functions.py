@@ -1,7 +1,7 @@
 import pandas as pd
 import math
 
-from DLLs.Tessng import p2m
+from Tessng import p2m
 from my_code.config import *
 
 ###############################################################################

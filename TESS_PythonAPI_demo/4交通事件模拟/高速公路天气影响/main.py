@@ -7,15 +7,15 @@ from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
-from DLLs.Tessng import *
-from TESSNG.MyPlugin import *
+from Tessng import *
+from MyPlugin import *
 
 if __name__ == '__main__':
     app = QApplication()
 
     workspace = os.fspath(Path(__file__).resolve().parent)
-    config = {'__workspace':workspace,
-              '__netfilepath':"Data\\test.tess",
+    config = {'__workspace': workspace,
+              '__netfilepath': "./Map/高速公路天气影响.tess",
               '__simuafterload': True,
               '__custsimubysteps': False
               }

@@ -1,0 +1,5 @@
+matplotlib==3.3.4
+numpy==1.19.5
+PySide2==5.15.2.1
+shiboken2==5.15.2.1
+torch==1.10.2

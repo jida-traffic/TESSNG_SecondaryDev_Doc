@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     workspace = os.fspath(Path(__file__).resolve().parent)
     config = {'__workspace':workspace,
-              '__netfilepath':r"C:\TESSNG_2.1.0\TESS_PythonAPI_EXAMPLE/智能网联车队.tess", # 请用户替换为存储路网文件的路径
+              '__netfilepath':r"./智能网联车队.tess", # 请用户替换为存储路网文件的路径
               '__simuafterload':True
               }
     plugin = MyPlugin()

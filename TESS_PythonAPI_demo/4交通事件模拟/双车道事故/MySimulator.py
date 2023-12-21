@@ -41,8 +41,10 @@ class MySimulator(QObject, PyCustomerSimulator):
                 if vehi.id() == accidentCar2_Id:
                     ref_outAngle.value = 30
                     return True
+                else:
+                    return False
             except:
-                pass
+                return False
         else:
             return False
 
@@ -73,8 +75,10 @@ class MySimulator(QObject, PyCustomerSimulator):
                     ref_desirSpeed.value = 0
                     accidentCar.laneNum2 = vehi.vehicleDriving().laneNumber()
                     return True
+                else:
+                    return False
             except:
-                pass
+                return False
         else:
             return False
 
@@ -106,6 +110,8 @@ class MySimulator(QObject, PyCustomerSimulator):
                 accidentCar.lock = 1
                 accidentCar2_Id = accidentCar2.id()
                 return True
+            else:
+                return False
         else:
             return False
 
@@ -126,8 +132,10 @@ class MySimulator(QObject, PyCustomerSimulator):
         if accidentCar.accidentStart:
             if 50 <= p2m(vehi.vehicleDriving().currDistanceInRoad()):
                 return [accidentCar.laneNum1, accidentCar.laneNum2]
+            else:
+                return []
         else:
-            return False
+            return []
 
 
     # 过载父类方法，车道限速

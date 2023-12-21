@@ -3,7 +3,7 @@ from PySide2.QtCore import *
 
 from my_code.config import *
 from my_code.functions import *
-from DLLs.Tessng import *
+from Tessng import *
 
 ###############################################################################
 

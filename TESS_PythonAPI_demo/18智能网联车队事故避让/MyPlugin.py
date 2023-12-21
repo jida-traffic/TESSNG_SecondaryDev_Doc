@@ -36,7 +36,7 @@ class MyPlugin(TessPlugin):
         iface = tngIFace()
         win = iface.guiInterface().mainWindow()
         #将信号mSimuInf.forReStartSimu关联到主窗体的槽函数doStartSimu，可以借实现自动重复仿真
-        self.mSimuInf.forReStartSimu.connect(win.doStartSimu, Qt.QueuedConnection)
+        # self.mSimuInf.forReStartSimu.connect(win.doStartSimu, Qt.QueuedConnection)
 
     # 过载父类方法，返回插件路网子接口，此方法由TESS NG调用
     def customerNet(self):

@@ -110,24 +110,15 @@ class MySimulator(QObject, PyCustomerSimulator):
         # 当前正在运行车辆列表
         lAllVehi = simuiface.allVehiStarted()
 
-        ''' 应急事件1-车辆事故 '''
-        # if simuTime == 60 * 1000:
-        #     accidentZoneRoadId = 337
-        #     accidentZoneLocation = 100
-        #     accidentZoneLength = 100
-        #     lAccidentZoneFromLaneNumber = [2]
-        #     accidentZoneDuration = 300
-        #     self.dynaCreateAccidentZone(accidentZoneRoadId, accidentZoneLocation, accidentZoneLength,
-        #                                 lAccidentZoneFromLaneNumber, accidentZoneDuration)
-        #     runInfo = "提示：\nL337路段100m处最左侧车道发生事故，请提前变道！"
-        #     self.signalRunInfo.emit(runInfo)
-        # if simuTime == (60 + 300) * 1000:
-        #     runInfo = "提示：\nL337路段100m处最左侧车道事故已处理完毕，请正常通行！"
-        #     self.signalRunInfo.emit(runInfo)
-
         '''应急事件2-应急车道开放'''
         # 应急车道开放时设置为Ture，并删除路段决策点
         self.openEmergencyLaneFlag = True
         if self.openEmergencyLaneFlag:
             runInfo = "提示：\nL1033路段发生事故，车辆拥堵加剧，应急车道开放！\nL1044路段发生事故，车辆拥堵加剧，应急车道开放！"
             self.signalRunInfo.emit(runInfo)
+            decisionPoints_lst = netiface.decisionPoints()
+            for decisionPoint in decisionPoints_lst:
+                routings_lst = decisionPoint.routings()
+                for routing in routings_lst:
+                    if netiface.removeDeciRouting(decisionPoint, routing):
+                        print("应急车道开放，删除路段决策点！")

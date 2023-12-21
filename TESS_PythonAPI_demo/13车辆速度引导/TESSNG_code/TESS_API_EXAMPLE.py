@@ -3,7 +3,7 @@
 import os
 from pathlib import Path
 
-from DLLs.Tessng import *
+from Tessng import *
 from .DockWidget import *
 
 

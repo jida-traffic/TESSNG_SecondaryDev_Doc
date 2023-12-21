@@ -327,7 +327,7 @@ class MySimulator(QObject, PyCustomerSimulator, SimuInterface, IVehicleDrivingMa
         di.fromTime = currSecs
         di.toTime = di.fromTime + 300 - 1
         di.vehiCount = 300
-        di.mlVehicleConsDetail = [Online.VehicleComposition(1, 60), Online.VehicleComposition(2, 40)]
+        di.mlVehicleConsDetail = [Online.VehiComposition(1, 60), Online.VehiComposition(2, 40)]
         return [di]
 
     # 过载父类方法，动态修改决策点不同路径流量比

@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     workspace = os.fspath(Path(__file__).resolve().parent)
     config = {'__workspace':workspace,
-              '__netfilepath':"./公交优先控制.tess", # 请用户替换为存储路网文件的路径
+              '__netfilepath':r".\信号控制优化.tess", # 请用户替换为存储路网文件的路径
               '__simuafterload':True
               }
     plugin = MyPlugin()

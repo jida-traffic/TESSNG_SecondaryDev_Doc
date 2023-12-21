@@ -105,5 +105,6 @@ class MyNet(PyCustomerNet):
             failedItem.setFont(QFont("黑体", 20))
             failedItem.setDefaultTextColor(QColor(0, 0, 0))
             scene.addItem(failedItem)
+            return False
 
-
+        return False

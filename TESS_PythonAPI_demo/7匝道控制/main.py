@@ -14,8 +14,8 @@ if __name__ == '__main__':
     app = QApplication()
 
     workspace = os.fspath(Path(__file__).resolve().parent)
-    config = {'__workspace':workspace,
-              '__netfilepath':"C:/Release1/Data/test1.tess",
+    config = {'__workspace': workspace,
+              '__netfilepath': "./Map/test1.tess",
               '__simuafterload': True,
               '__custsimubysteps': False
               }

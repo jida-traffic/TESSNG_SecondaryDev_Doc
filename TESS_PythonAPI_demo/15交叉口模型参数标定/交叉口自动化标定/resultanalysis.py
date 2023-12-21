@@ -21,7 +21,7 @@ import os
 # 	        左转  110.5
 
 ## 仿真结果文件夹路径
-file_path_simu = "C:\\Users\\ZDH\\OneDrive - tongji.edu.cn\\TESS教材\\交叉口自动化标定\\SimuResult\\芜湖-初始模型_ver2.tess\\20231120152647_end"
+file_path_simu = ".\\SimuResult\\芜湖-初始模型_ver2.tess\\20231120152647_end"
 
 
 

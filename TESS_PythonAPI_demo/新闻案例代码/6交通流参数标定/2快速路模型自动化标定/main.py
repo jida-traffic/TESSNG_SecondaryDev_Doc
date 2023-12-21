@@ -38,9 +38,9 @@ def tess_run(Params):
 def evaluation():
     # 仿真文件和真实数据文件路径
     # 真实传感器数据路径
-    file_path_real = "C:\\Users\\USER\\Desktop\\Projects\\TESS_PythonAPI_EXAMPLE555\\武宁路20090323\\real.csv"
+    file_path_real = ".\\real.csv"
     # 仿真输出文件路径
-    dir_path_simu = "C:\\Users\\USER\\Desktop\\Projects\\TESS_PythonAPI_EXAMPLE555\\SimuResult\\武宁路0932313_17.tess"
+    dir_path_simu = ".\\SimuResult\\武宁路0932313_17.tess"
     # 默认最新的仿真结果为本次tess仿真结果
     dirs = os.listdir(dir_path_simu)
     dir = dirs[-1]
@@ -66,7 +66,7 @@ def optfunc(p):
     count += 1
     print(f"第{count}次仿真已开始")
     # 创建子进程来实现tess仿真
-    t = Process(target=tess_run,args=([alpha, beit, safedistance, safeinterval],)) #实例化进程对象
+    t = Process(target=tess_run,args=([alpha, round(beit, 0), safedistance, safeinterval],)) #实例化进程对象
     t.start()
     # 等待TESS仿真结束，即子进程结束
     t.join()

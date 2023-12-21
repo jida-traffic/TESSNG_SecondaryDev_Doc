@@ -3,7 +3,7 @@
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
-from DLLs.Tessng import TessPlugin
+from Tessng import TessPlugin
 from .MyNet import *
 from .MySimulator import *
 from .TESS_API_EXAMPLE import *

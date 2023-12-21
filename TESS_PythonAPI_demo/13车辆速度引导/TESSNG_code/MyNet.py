@@ -8,8 +8,8 @@ from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
-from DLLs.Tessng import PyCustomerNet, tessngIFace
-from DLLs.Tessng import NetItemType, GraphicsItemPropName
+from Tessng import PyCustomerNet, tessngIFace
+from Tessng import NetItemType, GraphicsItemPropName
 
 
 # 用户插件子类，代表用户自定义与路网相关的实现逻辑，继承自MyCustomerNet

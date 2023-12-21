@@ -6,8 +6,6 @@ from Tessng import tessngPlugin, tessngIFace, m2p, p2m
 from Tessng import Online
 from Tessng import _RoutingFLowRatio, _DecisionPoint
 
-from functions import *
-
 
 class SecondaryDevCases:
     """ 定义二次开发案例类 SecondaryDevCases

@@ -4,7 +4,7 @@ from pathlib import Path
 import sys
 from PySide2.QtWidgets import QApplication
 
-from DLLs.Tessng import TessngFactory
+from Tessng import TessngFactory
 from TESSNG_code.MyPlugin import MyPlugin
 
 if __name__ == '__main__':

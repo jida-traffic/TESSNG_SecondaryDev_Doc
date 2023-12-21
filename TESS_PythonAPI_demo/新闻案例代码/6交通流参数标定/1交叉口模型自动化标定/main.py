@@ -21,7 +21,8 @@ def tess_run(Params):
 
     workspace = os.fspath(Path(__file__).resolve().parent)
     config = {'__workspace':workspace,
-              '__netfilepath':"./芜湖-初始模型_ver2.tess",
+              '__netfilepath':"./芜湖-初始模型_ver2_3600s.tess",
+              # '__netfilepath': "./芜湖机非混合流交叉口初始模型.tess",
               '__simuafterload': True,
               '__custsimubysteps': True
               }
@@ -37,7 +38,7 @@ def tess_run(Params):
 
 def evaluation():
     # 仿真输出文件路径
-    dir_path_simu = "C:\\Users\\USER\\Desktop\\Projects\\TESS_PythonAPI_EXAMPLE555\\SimuResult\\芜湖-初始模型_ver2.tess"
+    dir_path_simu = ".\\SimuResult\\芜湖-初始模型_ver2.tess"
     # 默认最新的仿真结果为本次tess仿真结果
     dirs = os.listdir(dir_path_simu)
     dir = dirs[-1]
@@ -59,7 +60,7 @@ def optfunc(p):
     count += 1
     print(f"第{count}次仿真已开始")
     # 创建子进程来实现tess仿真
-    t = Process(target=tess_run,args=([alpha, beit, safedistance, safeinterval],)) #实例化进程对象
+    t = Process(target=tess_run,args=([alpha, round(beit, 0), safedistance, safeinterval],)) #实例化进程对象
     t.start()
     # 等待TESS仿真结束，即子进程结束
     t.join()
@@ -73,7 +74,7 @@ def optfunc(p):
 if __name__ == '__main__':
     # 遗传算法
     count = 0
-    ga = GA(func=optfunc, n_dim=4, size_pop=10, max_iter=10, prob_mut=0.05, lb=[2.0, 1.0, 1.0, 1.0], ub=[5.0, 2.0, 2.0, 2.0], precision=0.1)
+    ga = GA(func=optfunc, n_dim=4, size_pop=10, max_iter=10, prob_mut=0.05, lb=[2.0, 1.0, 1.0, 1.0], ub=[5.0, 3.0, 2.0, 2.0], precision=0.1)
     best_x, best_y = ga.run()
     print('best_Params:', best_x,"best_RE:",best_y)
 

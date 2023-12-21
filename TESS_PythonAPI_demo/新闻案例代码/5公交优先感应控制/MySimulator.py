@@ -169,7 +169,9 @@ class MySimulator(QObject, PyCustomerSimulator):
         t = simuTime/1000
         #  获取信号灯相位号
         signalePhaseId = signalLamp.signalPhase().id()
-
+        # print("signalePhaseId={}".format(signalePhaseId))
+        # signalePhaseId = signalLamp.phaseId()
+        # print(signalLamp.signalGroupId(), signalLamp.id())
         empty = []
         
         #  判断是否有公交车到达
@@ -220,7 +222,6 @@ class MySimulator(QObject, PyCustomerSimulator):
 
         #  南向和东向的初始变化
         if t == 0:
-            print(signalePhaseId)
             #  这里需要加入判断是否为南向向信号灯的语句，如果是则改变红色
             if signalePhaseId == 418:#  这种是相位id去看路网信息里面有
                 signalLamp.setLampColor("红")

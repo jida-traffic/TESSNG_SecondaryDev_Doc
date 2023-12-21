@@ -125,9 +125,3 @@ class MySimulator(QObject, PyCustomerSimulator):
             runInfo = "提示：\nL337路段100m处最左侧车道事故已处理完毕，请正常通行！"
             self.signalRunInfo.emit(runInfo)
 
-        '''应急事件2-应急车道开放'''
-        # # 应急车道开放时设置为Ture，并删除路段决策点
-        # self.openEmergencyLaneFlag = True
-        # if self.openEmergencyLaneFlag:
-        #     runInfo = "提示：\nL1033路段发生事故，车辆拥堵加剧，应急车道开放！\nL1044路段发生事故，车辆拥堵加剧，应急车道开放！"
-        #     self.signalRunInfo.emit(runInfo)

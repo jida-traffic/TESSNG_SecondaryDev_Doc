@@ -13,7 +13,7 @@ from Tessng import *
 ###############################################################################
 
 # 输入相关数据
-data = eval(open(r"C:\TESSNG_2.1.0\TESS_PythonAPI_EXAMPLE\input.txt").read())
+data = eval(open(r".\input.txt").read())
 flow = data['Flow'] # 流量
 lane = data['Lane'] # 事故车道(从1开始)
 start = data['Start'] # 事故开始时间
@@ -22,13 +22,13 @@ loca = data['Location'] # 事故位置距离上游龙门架距离
 stra = data['Strategy'] # 0不使用管控，1使用可变限速，2使用开放路肩
 
 # 写入输出文件
-file = open(r"C:\TESSNG_2.1.0\TESS_PythonAPI_EXAMPLE\output.txt", 'w')
+file = open(r".\output.txt", 'w')
 txt = ["本次不执行管控策略\n\n","本次执行可变限速策略\n\n","本次执行开放路肩策略\n\n"][stra]
 file.write(txt)
 file.close()
 
 # 导入风险评估的CNN模型
-# CNN = torch.load(r'D:\济达交通\工作\25 TESS NG的py接口二次开发测试\0\PythonTessNGpyAPI\PythonTessNGpyAPI\TESS_PythonAPI_EXAMPLE\models\net.pkl')
+# CNN = torch.load(r'.\net.pkl')
 
 # 根据事故位置，确定上游路段、事故路段、下游路段的检测器编号
 if loca <= 1000:
