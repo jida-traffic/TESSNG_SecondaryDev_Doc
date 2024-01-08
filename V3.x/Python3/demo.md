@@ -36,7 +36,7 @@
 
 实现国标三类施工区：借道，不借道，开放硬路肩
 
-<img src="C:/Users/11475/Desktop/V3.x/Python3/image-20231211144639083.png" alt="image-20231211144639083" style="zoom:25%;" />
+<img src="image-20231211144639083.png" alt="image-20231211144639083" style="zoom:25%;" />
 
 <video src="https://www.jidatraffic.com/newWebsite/video/8施工区.mp4"></video>
 
@@ -48,7 +48,7 @@
 
 简述：模拟事故发生前后交通流演变
 
-![image-20231211144715050](C:/Users/11475/Desktop/V3.x/Python3/image-20231211144715050.png)
+![image-20231211144715050](image-20231211144715050.png)
 
 <video src="https://www.jidatraffic.com/newWebsite/video/9事件事故模拟(new).mp4"></video>
 
@@ -58,7 +58,7 @@
 
 简述：事故事件发生后，采取车道动态限速，车道关闭， 硬路肩|应急车道开放等管控手段
 
-![车道管控仿真](C:/Users/11475/Desktop/V3.x/Python3/车道管控仿真.png)
+![车道管控仿真](车道管控仿真.png)
 
 车道动态限速
 
@@ -84,7 +84,7 @@
 
 简述： 匝道信号控制，单交叉口信号控制，干线协调信号控制，公交信号优先
 
-![image-20231211144527839](C:/Users/11475/Desktop/V3.x/Python3/image-20231211144527839.png)![image-20231211144534045](C:/Users/11475/Desktop/V3.x/Python3/image-20231211144534045.png)![image-20231211144547440](C:/Users/11475/Desktop/V3.x/Python3/image-20231211144547440.png)![image-20231211144601838](C:/Users/11475/Desktop/V3.x/Python3/image-20231211144601838.png)
+![image-20231211144527839](image-20231211144527839.png)![image-20231211144534045](image-20231211144534045.png)![image-20231211144547440](image-20231211144547440.png)![image-20231211144601838](image-20231211144601838.png)
 
 匝道信号控制
 
@@ -122,7 +122,7 @@
 
 简介：高快速路场景参数标定，城市交叉口参数标定
 
-![image-20231211144808128](C:/Users/11475/Desktop/V3.x/Python3/image-20231211144808128.png)
+![image-20231211144808128](image-20231211144808128.png)
 
 高快速路场景参数标定
 
@@ -154,7 +154,7 @@
 
 简介：通过动态修改决策路径实现路径诱导
 
-<img src="C:/Users/11475/Desktop/V3.x/Python3/image-20231211144837837.png" alt="image-20231211144837837" style="zoom:50%;" />![image-20231211144854866](C:/Users/11475/Desktop/V3.x/Python3/image-20231211144854866.png)
+<img src="image-20231211144837837.png" alt="image-20231211144837837" style="zoom:50%;" />![image-20231211144854866](image-20231211144854866.png)
 
 <video src="https://www.jidatraffic.com/newWebsite/video/7路径诱导（new).mp4"></video>
 
@@ -166,7 +166,7 @@
 
 简介：以通行能力或者车均排放等为目标引导车辆以特定范围速度通过交叉口
 
-![速度引导](C:/Users/11475/Desktop/V3.x/Python3/速度引导.png)
+![速度引导](速度引导.png)
 
 <video src="https://www.jidatraffic.com/newWebsite/video/2车速引导.mp4"></video>
 
