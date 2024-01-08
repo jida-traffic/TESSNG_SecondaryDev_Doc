@@ -585,6 +585,10 @@ void SecondaryDevCases::doubleRingSignalControl(long currentSimuTime) {
 
 ```
 
+案例效果：
+
+<video src="https://www.jidatraffic.com/newWebsite/video/20231201_134842_双环信控方案下发测试效果.mp4"></video>
+
 
 
 ## 4. 需求加载与管理
@@ -597,7 +601,11 @@ void SecondaryDevCases::doubleRingSignalControl(long currentSimuTime) {
 
 ![创建车辆组成，指定车型](创建车辆组成，指定车型.png)
 
+<video src="https://www.jidatraffic.com/newWebsite/video/流量加载/20231110_122009_流量加载_创建车辆组成和发车点.mp4"></video>
+
 2-动态发车：不设置发车点，在指定车道和位置处加载车辆（一辆一辆加载）
+
+<video src="https://www.jidatraffic.com/newWebsite/video/流量加载/20231113_095503_指定车道和位置加载车辆.mp4"></video>
 
 核心代码
 
@@ -945,6 +953,8 @@ QList<Online::DecipointFlowRatioByInterval> MySimulator::calcDynaFlowRatioParame
 
 以上两点需求可在流量加载中找到实现方式。
 
+<video src="https://www.jidatraffic.com/newWebsite/video/流量加载/20231113_114751_发车点+决策点创建+路径加载+删除路径.mp4"></video>
+
 
 
 ### 4.3.  路径重构
@@ -955,7 +965,7 @@ QList<Online::DecipointFlowRatioByInterval> MySimulator::calcDynaFlowRatioParame
 
 用户可以利用自有算法实现OD分配、路径重构，然后依据4.1中所述的流量加载方式实现TESSNG 软件加载路径重构结果
 
-
+<video src="https://www.jidatraffic.com/newWebsite/video/流量加载/20231113_145224_断面流量+转向比例加载.mp4"></video>
 
 
 
@@ -1096,6 +1106,18 @@ void SecondaryDevCases::processControl(float planNumber) {
 }
 ```
 
+<video src="https://www.jidatraffic.com/newWebsite/video/流程控制/20231122_094245_启动-停止-暂停-恢复仿真.mp4"></video>
+
+<video src="https://www.jidatraffic.com/newWebsite/video/流程控制/20231122_101732_查询指定车辆信息.mp4"></video>
+
+<video src="https://www.jidatraffic.com/newWebsite/video/流程控制/20231122_115440_查询路段或车道车辆信息.mp4"></video>
+
+<video src="https://www.jidatraffic.com/newWebsite/video/流程控制/20231122_155104_设置仿真精度.mp4"></video>
+
+<video src="https://www.jidatraffic.com/newWebsite/video/流程控制/20231122_155826_设置仿真时长.mp4"></video>
+
+<video src="https://www.jidatraffic.com/newWebsite/video/流程控制/20231122_160110_设置仿真加速比.mp4"></video>
+
 
 
 ### 5.4.  动作控制
@@ -1103,6 +1125,10 @@ void SecondaryDevCases::processControl(float planNumber) {
 运行过程中的操作：
 
 1- 修改发车流量信息
+
+<video src="https://www.jidatraffic.com/newWebsite/video/动作控制/20231114_113447_动态发车流量编辑.mp4"></video>
+
+<video src="https://www.jidatraffic.com/newWebsite/video/动作控制/20231114_114107_动态删除发车点.mp4"></video>
 
 ```c++
 QList<Online::DispatchInterval> MySimulator::calcDynaDispatchParameters()
@@ -1129,6 +1155,10 @@ QList<Online::DispatchInterval> MySimulator::calcDynaDispatchParameters()
 
 
 2- 修改限速区，事故区信息；删除减速区，限速区，事故区
+
+<video src="https://www.jidatraffic.com/newWebsite/video/动作控制/20231114_130300_减速区.mp4"></video>
+
+<video src="\\https://www.jidatraffic.com/newWebsite/video/动作控制/20231114_141714_施工区.mp4"></video>
 
 ```c++
 //重新计算期望速度
@@ -1164,6 +1194,8 @@ bool MySimulator::reCalcdesirSpeed(IVehicle* pIVehicle, qreal& inOutDesirSpeed) 
 
 3-车辆位置移动
 
+<video src="https://www.jidatraffic.com/newWebsite/video/动作控制/20231114_133231_移动车辆.mp4"></video>
+
 ```c++
 // 车辆移动测试时，将L5路段车辆移动过路口的各个车道
 	if (mpSecondDevCasesObj->mActionControlMethodNumber == 2) {
@@ -1185,6 +1217,8 @@ bool MySimulator::reCalcdesirSpeed(IVehicle* pIVehicle, qreal& inOutDesirSpeed) 
 
 4-修改车辆速度
 
+<video src="https://www.jidatraffic.com/newWebsite/video/动作控制/20231207_131017_车辆速度设置测试.mp4"></video>
+
 ```c++
 //重新设置速度
 bool MySimulator::reSetSpeed(IVehicle* pIVehicle, qreal& inOutSpeed) {
@@ -1203,6 +1237,8 @@ bool MySimulator::reSetSpeed(IVehicle* pIVehicle, qreal& inOutSpeed) {
 
 
 5-修改车辆路径
+
+<video src="https://www.jidatraffic.com/newWebsite/video/20231207_133054_修改车辆路径测试.mp4"></video>
 
 ```c++
 // 修改车辆路径，将L1路段所有车辆修改为右转路径
@@ -1238,6 +1274,8 @@ bool MySimulator::reSetSpeed(IVehicle* pIVehicle, qreal& inOutSpeed) {
 
 6-强制车辆不变道
 
+<video src="https://www.jidatraffic.com/newWebsite/video/20231207_151904_强制车辆不变道测试.mp4"></video>
+
 ```c++
 bool MySimulator::reCalcDismissChangeLane(IVehicle* pIVehicle) {
 	//强制车辆不变道，禁止L2路段所有车辆右变道
@@ -1257,6 +1295,8 @@ bool MySimulator::reCalcDismissChangeLane(IVehicle* pIVehicle) {
 
 
 7-强制车辆变道
+
+<video src="https://www.jidatraffic.com/newWebsite/video/20231207_180602_强制车辆变道测试.mp4"></video>
 
 ```c++
 //计算是否要右自由变道
@@ -1284,6 +1324,8 @@ bool MySimulator::reCalcDismissChangeLane(IVehicle* pIVehicle) {
 
 8-强制车辆闯红灯
 
+<video src="https://www.jidatraffic.com/newWebsite/video/20231208_092546_强制车辆闯红灯测试.mp4"></video>
+
 ```c++
 //重新设置速度
 bool MySimulator::reSetSpeed(IVehicle* pIVehicle, qreal& inOutSpeed) {
@@ -1310,6 +1352,8 @@ bool MySimulator::reSetSpeed(IVehicle* pIVehicle, qreal& inOutSpeed) {
 
 9-强制车辆停车
 
+<video src="https://www.jidatraffic.com/newWebsite/video/动作控制/20231117_153837_强制车辆停车.mp4"></video>
+
 ```c++
 //重新设置速度
 bool MySimulator::reSetSpeed(IVehicle* pIVehicle, qreal& inOutSpeed) {
@@ -1326,6 +1370,8 @@ bool MySimulator::reSetSpeed(IVehicle* pIVehicle, qreal& inOutSpeed) {
 
 10-强制清除车辆（车辆消失）
 
+<video src="https://www.jidatraffic.com/newWebsite/video/动作控制/20231117_155811_强制清除车辆.mp4"></video>
+
 ```c++
 //8. 强制清除车辆,以L5路段为例，清除所有小客车
 	if (mpSecondDevCasesObj->mActionControlMethodNumber == 8) {
@@ -1341,6 +1387,8 @@ bool MySimulator::reSetSpeed(IVehicle* pIVehicle, qreal& inOutSpeed) {
 
 
 11-修改车辆航向角
+
+<video src="https://www.jidatraffic.com/newWebsite/video/动作控制/20231117_160304_修改航向角.mp4"></video>
 
 ```c++
 void MySimulator::afterStep(IVehicle* pIVehicle) {
@@ -1408,7 +1456,9 @@ bool MySimulator::calcAcce(IVehicle *pIVehicle, qreal &acce)
 
 ```
 
+13- 车道关闭，恢复
 
+<video src="https://www.jidatraffic.com/newWebsite/video/动作控制/20231117_161500_车道封闭和恢复.mp4"></video>
 
 ```c++
 /动作控制
@@ -1464,6 +1514,8 @@ void SecondaryDevCases::actionControl(float planNumber) {
 ### 5.5. 管控手段控制
 
 1- 修改信号灯灯色（直接修改某个直行方向的信号灯颜色，如红色直接切换为绿色）
+
+<video src="https://www.jidatraffic.com/newWebsite/video/管控手段控制/20231120_150706_L12直行灯第10s强制修改为绿色持续50s.mp4"></video>
 
 ```c++
 bool MySimulator::calcLampColor(ISignalLamp* pSignalLamp) {
@@ -1589,6 +1641,8 @@ void SecondaryDevCases::doubleRingSignalControl(long currentSimuTime) {
 
 3- 修改相位绿灯时间长度
 
+<video src="https://www.jidatraffic.com/newWebsite/video/管控手段控制/20231120_153332_修改相位红绿灯持续时间_L12直行红绿灯由红90绿32黄3红25改为红10绿110黄3红28.mp4"></video>
+
 ```c++
 if (planNumber == 2) {
 		ISignalPhase* pSignalPhase7OfL12 = gpTessInterface->netInterface()->findSignalPhase(7);
@@ -1600,6 +1654,8 @@ if (planNumber == 2) {
 
 
 5- 修改link, connector 限速
+
+<video src="https://www.jidatraffic.com/newWebsite/video/管控手段控制/20231120_160424_L5路段最高限速由80修改至20.mp4"></video>
 
 ```c++
 /*
@@ -1617,7 +1673,7 @@ if (planNumber == 2) {
 
 
 
-
+6- 修改link, connector 允许的车辆类型（暂时无法实现）
 
 ```
 //管控手段控制
@@ -1658,7 +1714,7 @@ void SecondaryDevCases::controlMeasures(float planNumber, int limitSpeed) {
 
 1-修改跟驰模型参数（机动车，非机动车）
 
-
+<video src="https://www.jidatraffic.com/newWebsite/video/跟驰模型参数修改/20231120_144406_跟驰模型参数修改.mp4"></video>
 
 ```c++
 // 修改跟驰模型参数
@@ -1685,9 +1741,19 @@ QList<Online::FollowingModelParam> MySimulator::reSetFollowingParams() {
 }
 ```
 
+默认参数效果
 
+<video src="https://www.jidatraffic.com/newWebsite/video/换道模型/20231120_181258_无修改版本.mp4"></video>
 
+修改参数使车辆倾向变道
 
+<video src="https://www.jidatraffic.com/newWebsite/video/换道模型/20231120_182330_修改_倾向变道.mp4"></video>
+
+修改参数使车辆不倾向变道
+
+<video src="https://www.jidatraffic.com/newWebsite/video/换道模型/20231120_182702_修改_不倾向变道.mp4"></video>
+
+### 
 
 ### 6.2. 换道模型
 
@@ -1718,7 +1784,7 @@ bool MySimulator::reSetChangeLaneFreelyParam(IVehicle* pIVehicle, int& safeTime,
 }
 ```
 
-
+<video src="https://www.jidatraffic.com/newWebsite/video/20231213_162031_修改自由变道参数测试.mp4"></video>
 
 
 

@@ -1,0 +1,8 @@
+matplotlib==3.3.4
+numpy==1.19.5
+ortools==9.4.1874
+pandas==1.1.5
+PySide2==5.15.2.1
+shiboken2==5.15.2.1
+sko==0.5.7
+torch==1.10.2
