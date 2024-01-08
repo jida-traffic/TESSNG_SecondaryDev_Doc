@@ -36,7 +36,7 @@
 
 实现国标三类施工区：借道，不借道，开放硬路肩
 
-<img src="C:/Users/11475/Desktop/V3.x/Python3/image-20231211144639083.png" alt="image-20231211144639083" style="zoom:25%;" />
+<img src="image-20231211144639083.png" alt="image-20231211144639083" style="zoom:25%;" />
 
 <video src="https://www.jidatraffic.com/newWebsite/video/8施工区.mp4"></video>
 
