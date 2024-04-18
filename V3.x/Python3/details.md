@@ -4218,7 +4218,8 @@ vehis = simuiface.allVehiStarted()
 
 Ø **def getVehiTrace(self, vehiId:int) -> typing.List: ...**
 
-获取指定车辆运行轨迹
+获取指定车辆运行轨迹 
+note: 需要将菜单栏的“是否输出轨迹”选项选择“是”，否则返回值为空列表
 
 参数：
 
