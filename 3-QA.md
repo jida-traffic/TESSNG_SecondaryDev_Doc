@@ -81,6 +81,14 @@ def ref_reSetSpeed(self, vehi, ref_inOutSpeed):
 
 ![](./q13.png)
 
+### 14. 在C++二次开发中，运行TESS_CPPAPI_EXAMPLE后左上角不显示版本号，且打开其它路网时报以下错误：
 
+![](./q14.png)
+
+**答：**运行时的qt动态库版本不匹配，请确认运行时依赖库为qt5.15.2版本，或将TESSNG根目录下qt相关动态库复制到运行目录下（x64/release或x64/debug）
+
+### 15. 在C++二次开发中，Release运行TESS_CPPAPI_EXAMPLE后未显示TESSNG GUI窗口且立即结束运行
+
+**答：**运行时依赖的系统环境动态库或第三方动态库不匹配，请将TESSNG根目录下qt相关动态库复制到运行目录下（x64/release或x64/debug）运行后再次尝试。
 
 <!-- ex_nonav -->
