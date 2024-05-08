@@ -91,4 +91,10 @@ def ref_reSetSpeed(self, vehi, ref_inOutSpeed):
 
 **答：**运行时依赖的系统环境动态库或第三方动态库不匹配，请将TESSNG根目录下qt相关动态库复制到运行目录下（x64/release或x64/debug）运行后再次尝试。
 
+### 16. 在C++二次开发中，TESSNG打开后闪退，且运行TESS_CPPAPI_EXAMPLE后报错“Cannot mix incompatible Qt library (5.15.2) with this library (5.15.9)”
+
+**答：**运行时依赖的qt版本动态库掺杂了5.15.9版本的动态库，与5.15.2版本的动态库不兼容。解决方法是将安装的5.15.2版本qt目录下msvc/bin中的q开头的动态库复制到tessng运行目录下，覆盖原本的动态库即可。
+
+
+
 <!-- ex_nonav -->
