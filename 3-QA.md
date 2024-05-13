@@ -85,7 +85,7 @@ def ref_reSetSpeed(self, vehi, ref_inOutSpeed):
 
 ![](./q14.png)
 
-**答：**运行时的qt动态库版本不匹配，请确认运行时依赖库为qt5.15.2版本，或将TESSNG根目录下qt相关动态库复制到运行目录下（x64/release或x64/debug）
+**答：**运行时的qt动态库版本不匹配，请确认运行时依赖库为qt5.15.9版本，或将TESSNG根目录下qt相关动态库复制到运行目录下（x64/release或x64/debug）
 
 ### 15. 在C++二次开发中，Release运行TESS_CPPAPI_EXAMPLE后未显示TESSNG GUI窗口且立即结束运行
 
@@ -93,7 +93,13 @@ def ref_reSetSpeed(self, vehi, ref_inOutSpeed):
 
 ### 16. 在C++二次开发中，TESSNG打开后闪退，且运行TESS_CPPAPI_EXAMPLE后报错“Cannot mix incompatible Qt library (5.15.2) with this library (5.15.9)”
 
-**答：**运行时依赖的qt版本动态库掺杂了5.15.9版本的动态库，与5.15.2版本的动态库不兼容。解决方法是将安装的5.15.2版本qt目录下msvc/bin中的q开头的动态库复制到tessng运行目录下，覆盖原本的动态库即可。
+**答：**运行时依赖的qt版本动态库掺杂了5.15.2版本的动态库，与5.15.9版本的动态库不兼容。解决方法是将安装的5.15.9版本qt目录下msvc/bin中的q开头的动态库复制到tessng运行目录下，覆盖原本的动态库即可。
+
+### 17. 在C++二次开发中，TESSNG打开后不显示版本号，且打开路网时报以下错误。
+
+![](./q17.jpg)
+
+**答：**运行时依赖的qt版本动态库插件为5.15.2版本，请修改为5.15.9版本，或将TESSNG根目录下的plugins文件夹复制到运行目录下。
 
 
 
