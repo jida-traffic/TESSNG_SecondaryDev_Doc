@@ -101,6 +101,12 @@ def ref_reSetSpeed(self, vehi, ref_inOutSpeed):
 
 **答：**运行时依赖的qt版本动态库插件为5.15.2版本，请修改为5.15.9版本，或将TESSNG根目录下的plugins文件夹复制到运行目录下。
 
+### 17. 在python二次开发中，如报以下错误：
+
+![a8f585da395d3fd885da3ae81da215aa_](./q18.png)
+
+**答：**原因为当前python版本不匹配，建议下载anaconda3后，创建python3.6虚拟环境，安装pyside2即可解决。
+
 
 
 <!-- ex_nonav -->
